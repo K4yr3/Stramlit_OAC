@@ -122,11 +122,11 @@ col1, col2 = st.columns(2)
 with col1:
 
     year = st.number_input(
-        "Año",
-        min_value=2000,
-        max_value=2100,
-        value=2025,
-        step=1
+    "Año",
+    min_value=2026,
+    max_value=2100,
+    value=2026,
+    step=1
     )
 
 with col2:
