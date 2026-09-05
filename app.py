@@ -78,19 +78,23 @@ encoder_categories = dict(
 
 
 airline_options = sorted(
-    encoder_categories["sigla_aerolinea"]
+    [str(x) for x in encoder_categories["sigla_aerolinea"]
+     if pd.notna(x)]
 )
 
 traffic_options = sorted(
-    encoder_categories["trafico"]
+    [str(x) for x in encoder_categories["trafico"]
+     if pd.notna(x)]
 )
 
 flight_type_options = sorted(
-    encoder_categories["tipo_vuelo"]
+    [str(x) for x in encoder_categories["tipo_vuelo"]
+     if pd.notna(x)]
 )
 
 flight_class_options = sorted(
-    encoder_categories["tipo_vuelo_clasificado"]
+    [str(x) for x in encoder_categories["tipo_vuelo_clasificado"]
+     if pd.notna(x)]
 )
 
 
